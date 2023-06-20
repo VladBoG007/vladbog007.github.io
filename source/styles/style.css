@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+body{
+	background: linear-gradient(90deg, #FF0000 20%, #00F8F4 50%, #F8EA2B 75%, #FF0000 100%);
+	font-family: 'Michroma', sans-serif;
+}
+.nav-link{
+	color: white;
+}
+.navbar-nav .nav-link.active{
+	color: red;
+	border-bottom: 1px solid red;
+}
+.navbar-brand>img:hover{
+	animation: anim 3s ease;
+}
+.navbar-toggler{
+	background-color: lightgray;
+}
+.card{
+	background: linear-gradient(180deg, #903535 0%, #CED119 100%);;
+}
+@keyframes anim{
+	0%{
+		rotate: 0deg;
+	}
+	50%{
+		rotate: 360deg;
+	}
+	100%{
+		rotate: 0deg;
+	}
+}
+.nav-link:hover{
+	background-color: lightgray;
+}
+.sidebar{
+	color: white;
+	background-color: #45363a;
+	border-radius: 10px;
+}
+.footer-text{
+	color: white;
+	margin: auto auto ;
+}
+.slide-text{
+	color: #362b2e;
+	margin: auto auto ;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+	background-color: #323232;
+
+}
+ 
+::-webkit-scrollbar-thumb {
+	background-color: #4f4d4f;
+}
+footer{
+	background-color: #45363a;
+}
+.help{
+	color: white;
+}
+.media-links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.call-anim{
+	animation: PhoneAnimate 2s ease 0s infinite normal forwards;
+}
+@keyframes PhoneAnimate {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+@media (max-width: 755px){
+	.carousel-indicators{
+		display: none;
+	}
+}
